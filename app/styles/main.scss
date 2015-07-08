@@ -1,13 +1,16 @@
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Regular'), 
-       local('Roboto-Regular'), 
-       url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
-       format('woff');
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
-
 
 body {
   background-color: #2196f3;
@@ -54,4 +57,38 @@ body {
 }
 .borderbox {
   border: 1px solid rgb(224, 224, 224);
+}
+.rotate:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+.rotate-opposite:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+.center {
+  text-align: center;
+}
+.margins {
+  margin-left: 1px!important;
+  margin-right: 1px!important;
+}
+.title {
+  text-align: left;
+}
+
+.progress {
+  height: 20px;
+}
+.determinate {
+  height: 25px;
+}
+.skills {
+  display: none;
 }

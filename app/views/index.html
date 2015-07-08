@@ -4,7 +4,7 @@
 </div>
 <div class="row my-info">
   <ul class="collapsible popout" data-collapsible="accordion">
-    <li>
+    <li class="rotate">
       <div class="collapsible-header blue darken-2 blue-text text-lighten-4"><i class="material-icons">assignment_turned_in</i>Who Am I?</div>
       <div class="collapsible-body white borderbox">
         <div class="row">
@@ -15,7 +15,7 @@
         </div>
       </div>
     </li>
-    <li>
+    <li class="rotate-opposite">
       <div class="collapsible-header blue darken-2 blue-text text-lighten-4"><i class="material-icons">lock_open</i>Open Source Projects</div>
       <div class="collapsible-body">
         <ul class="collection">
@@ -30,13 +30,13 @@
         </ul>
       </div>
     </li>
-    <li>
+    <li class="rotate">
       <div class="collapsible-header blue darken-2 blue-text text-lighten-4"><i class="material-icons">whatshot</i>Fun Stuff</div>
       <div class="collapsible-body white borderbox">
         <iframe src="http://materialpoll.tk/HHBph" scrolling="yes" style="width: 100%; height: 500px" frameBorder="0"></iframe>
       </div>
     </li>
-    <li>
+    <li class="rotate-opposite">
       <div class="collapsible-header blue darken-2 blue-text text-lighten-4"><i class="material-icons">public</i>Social Links</div>
       <div class="collapsible-body white">
         <div class="collection">
@@ -48,4 +48,37 @@
       </div>
     </li>
   </ul>
+</div>
+<div class="row margins skills">
+  <div class="col s12 m12">
+    <div class="card blue darken-2">
+      <div class="card-content center white-text">
+        <span class="card-title">Skills</span>
+        <p class='title'>Ruby On Rails</p>
+        <div class="progress blue lighten-2">
+          <div class="determinate blue darken-4" style="width: {{ruby}}"></div>
+        </div>
+        <p class='title'>Angularjs</p>
+        <div class="progress blue lighten-2">
+          <div class="determinate blue darken-4" style="width: {{angular}}"></div>
+        </div>
+        <p class='title'>PHP</p>
+        <div class="progress blue lighten-2">
+          <div class="determinate blue darken-4" style="width: {{php}}"></div>
+        </div>
+        <p class='title'>Javascript</p>
+        <div class="progress blue lighten-2">
+          <div class="determinate blue darken-4" style="width: {{javascript}}"></div>
+        </div>
+        <p class='title'>SASS</p>
+        <div class="progress blue lighten-2">
+          <div class="determinate blue darken-4" style="width: {{sass}}"></div>
+        </div>
+        <p class='title'>CSS</p>
+        <div class="progress blue lighten-2">
+          <div class="determinate blue darken-4" style="width: {{css}}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
