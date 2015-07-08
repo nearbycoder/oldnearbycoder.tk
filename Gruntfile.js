@@ -393,21 +393,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Run some tasks in parallel to speed up the build process
-    concurrent: {
-      server: [
-        'compass:server'
-      ],
-      test: [
-        'compass'
-      ],
-      dist: [
-        'compass:dist',
-        'imagemin',
-        'svgmin'
-      ]
-    },
-
     // Test settings
     karma: {
       unit: {
@@ -426,7 +411,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
-      'concurrent:server',
+      'compass:server',
       'autoprefixer:server',
       'connect:livereload',
       'watch'
@@ -441,7 +426,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'wiredep',
-    'concurrent:test',
+    'compass',
     'autoprefixer',
     'connect:test',
     'karma'
@@ -451,7 +436,9 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
+    'compass:dist',
+    'imagemin',
+    'svgmin',
     'autoprefixer',
     'concat',
     'ngAnnotate',
