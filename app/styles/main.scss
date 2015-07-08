@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
 @keyframes swing
 {
     15%
@@ -15,7 +14,7 @@
 
 body {
   background-color: #2196f3;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 
 .logo {
@@ -48,7 +47,7 @@ body {
   font-size: 16px;
   padding-right: 30px!important;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 .my-info {
   display:none;
