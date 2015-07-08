@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), 
+       local('Roboto-Regular'), 
+       url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
+       format('woff');
+}
+
+
+body {
+  background-color: #2196f3;
+  font-family: Roboto;
+}
+
+.logo {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 0px;
+  @media only screen and (min-width: 601px) {
+    font-size: 35px;
+  }
+  font-size: 20px;
+  text-align: center;
+  color: #e3f2fd;
+}
+
+#nearbycoder {
+  font-family: 'Press Start 2P', cursive;
+  @media only screen and (min-width: 601px) {
+    font-size: 20px;
+
+  }
+  font-size: 15px;
+  text-align: center;
+  color: #bbdefb;
+}
+
+.grav {
+  margin-top: 10px;
+}
+.about-me {
+  margin-top: 10px;
+  font-size: 16px;
+  padding-right: 30px!important;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+.my-info {
+  display:none;
+}
+.collection {
+  margin: 0;
+}
+.borderbox {
+  border: 1px solid rgb(224, 224, 224);
+}
