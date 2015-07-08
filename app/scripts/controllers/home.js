@@ -14,9 +14,11 @@ angular.module('ngBlogApp')
     var theaterRun = document.cookie.split('=')[1];
     if(theaterRun !== 'True'){
 	    theater
-	    	.describe('nearbycoder', 1, '#nearbycoder');
+	    	.describe('nearbycoder', 1, '#nearbycoder')
+	    	.describe('logo', 0.5, '#logo');
 
 	    theater
+	    	.write('logo: Nearby&lt;/&gt;Coder', 4)
 	    	.write('nearbycoder: Hello.....', 10)
 	    	.write('nearbycoder: Welcome to my website!', 600)
 	    	.write('nearbycoder: I am a web developer with a passion to code. Currently I work with ruby on rails, php, and javascript frameworks such as angularjs', 600);
@@ -27,7 +29,7 @@ angular.module('ngBlogApp')
 	    	})
 	    	.on('say:end', function() {
 	    		count++;
-	    		if(count === 3){
+	    		if(count === 4){
 	    			$('.my-info').fadeIn(1000);
 	    		}
 
@@ -37,6 +39,7 @@ angular.module('ngBlogApp')
 	    	});
 	  } else {
 	  	$('#nearbycoder').append('I am a web developer with a passion to code. Currently I work with ruby on rails, php, and javascript frameworks such as angularjs');
+	  	$('#logo').append('Nearby&lt;/&gt;Coder');
 	  	$('.my-info').fadeIn(1000);
 	  }
 
