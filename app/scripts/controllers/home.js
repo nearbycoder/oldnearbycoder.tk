@@ -27,7 +27,7 @@ angular.module('ngBlogApp')
 	    	.write('logo: Nearby&lt;/&gt;Coder', 4)
 	    	.write('nearbycoder: Hello.....', 10)
 	    	.write('nearbycoder: Welcome to my website!', 600)
-	    	.write('nearbycoder: I am a web developer with a passion to code. Currently I work with ruby on rails, php, and javascript frameworks such as angularjs', 600);
+	    	.write('nearbycoder: I am a web developer with a passion to code. Currently I work with ruby on rails, php, and javascript frameworks such as angularjs and react', 600);
 
 	    theater
 	    	.on('say:start, erase:start', function() {
@@ -44,6 +44,7 @@ angular.module('ngBlogApp')
 					  	$scope.javascript = '67%';
 					  	$scope.sass = '50%';
 					  	$scope.css = '90%';
+					  	$scope.react = '40%';
 					  	$scope.$apply();
 	    			});
 	    		}
