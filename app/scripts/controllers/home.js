@@ -17,6 +17,7 @@ angular.module('ngBlogApp')
   	$scope.javascript = '0%';
   	$scope.sass = '0%';
   	$scope.css = '0%';
+  	$scope.react = '0%';
     var theaterRun = document.cookie.split('=')[1];
     if(theaterRun !== 'True'){
 	    theater
@@ -64,6 +65,7 @@ angular.module('ngBlogApp')
 		  	$scope.javascript = '67%';
 		  	$scope.sass = '50%';
 		  	$scope.css = '90%';
+		  	$scope.react = '40%';
 		  	$scope.$apply();
 	  	});
 	  	
